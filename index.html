@@ -10,7 +10,10 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <ul class="nav__ul">
+            <button onclick="burger()" class="mobile_nav">
+                ----<br>----<br>----
+            </button>
+            <ul onclick="burger()" class="nav__ul" id="ul_nav">
                 <li class="logo">Oussema Khlifi</li>
                 <li class="contact__btn">Contact</li>
                 <li>About</li>
@@ -21,23 +24,38 @@
 
         </nav>
     </header>
-    <section class="second__header">
+    <div class="second__header">
         <div class="side__text">
-            <p class="title">
+            <div class="title">
                 <span style="font-size:1.2em">Hi I'Am</span><br>Oussema Khlifi
-            </p>
-            <p class="description">
+            </div>
+            <div class="description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eos magni nulla recusandae exercitationem, mollitia accusantium asperiores 
-            </p>
+            </div>
+
             <button class="hireme_btn">Hire Me</button>
         </div>
 
         <div class="side_img">
             <img src="assets/img.png" alt="img" />
         </div>
-    </section> 
+    </div> 
 
     <section class="services">
+        <div class="right__side">
+            <div class="title">
+                My Awsome <br> <span style="color:rgb(255, 94, 0)">Services</span> 
+            </div>
+            <div class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque totam, excepturi ea hic maxime magni aliquid iusto facilis placeat quis consequatur dolores, soluta beatae inventore voluptatibus, enim nostrum dolor laboriosam!
+                <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nesciunt quis explicabo dicta itaque harum alias, impedit iusto numquam, minus unde nihil quas temporibus voluptatum iure est optio! Quod, quam?
+            
+            </div>
+            <div class="btn__container">
+                <button class="cv__btn">Hire CV</button>
+
+            </div>
+        </div>
         <div class="left__side">
             <div class="card">
                 <p class="title">
@@ -71,17 +89,10 @@
        
         </div>
 
-        <div class="right__side">
-            <div class="title">
-                My Awsome <br> <span style="color:rgb(255, 94, 0)">Services</span> 
-            </div>
-            <div class="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque totam, excepturi ea hic maxime magni aliquid iusto facilis placeat quis consequatur dolores, soluta beatae inventore voluptatibus, enim nostrum dolor laboriosam!
-                <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nesciunt quis explicabo dicta itaque harum alias, impedit iusto numquam, minus unde nihil quas temporibus voluptatum iure est optio! Quod, quam?
-            
-            </div>
-            <button class="cv__btn">Hire CV</button>
-        </div>
-    </sectio
+       
+    </section>
+
+    <script src="js/responsive.js"></script>
+
 </body>
 </html>
